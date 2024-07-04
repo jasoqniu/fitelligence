@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <p>Your BMI is: {{ bmi }}</p>
+        <p>Health Status: {{ health_status }}</p>
+        <p>Recommended Calorie Intake: {{ calorie_recommendation }}</p>
+        <form action="{{ url_for('goals') }}" method="post">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

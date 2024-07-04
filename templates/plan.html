@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Personalized Plan</h2>
+        <p>{{ workout_plan }}</p>
+        <form action="{{ url_for('meal_plan') }}" method="get">
+            <button type="submit">View Meal Plan</button>
+        </form>
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">Return to Main Menu</button>
+        </form>
+    </div>
+</body>
+</html>
