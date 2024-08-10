@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import google.generativeai as palm
 
-palm.configure(api_key="AIzaSyCYwcNtj9pXV0m8aa7ixIQAVjApDayiVTQ")
+palm.configure(api_key="")
 model = {"model": "models/chat-bison-001"}
 
 app = Flask(__name__)
